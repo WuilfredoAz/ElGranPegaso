@@ -1,0 +1,4109 @@
+/*Amarillo #FDC236 Azul: #2C373B Rojo: #92243E* Tab: #25231F*/
+/*-------------------------ESTILOS UNIVERSALES--------------------------------*/
+@font-face{
+    font-family: "Gotham-Book";
+    src: url("../fonts/Gotham-Book.otf");
+}
+
+@font-face{
+    font-family: "Gotham-Medium";
+    src: url("../fonts/Gotham-Medium.otf");
+}
+
+@font-face{
+    font-family: "Gotham-Light";
+    src: url("../fonts/Gotham-Light.otf");
+}
+
+@font-face{
+    font-family: "Gotham-Bold";
+    src: url("../fonts/Gotham-Bold.otf");
+}
+
+@font-face{
+    font-family: "Gotham-Thin";
+    src: url("../fonts/Gotham-Thin.otf");
+}
+
+@font-face{
+    font-family: "Gotham-Regular";
+    src: url("../fonts/Gotham-Regular.otf");
+}
+
+*{
+    margin: 0;
+    padding:0;
+    font-family: "Gotham-Light"; /*Importar Gotham*/
+    text-transform: uppercase;
+    -webkit-box-sizing:border-box;
+    box-sizing: border-box;
+    color:#2C373B;
+
+    /*BUSCAR PARA O- (OPERRA) E INTERNET EXPLORRER EL BOX SIZING*/
+}
+
+img{
+    display: block;
+    max-width: 100%;
+}
+
+h2{
+    font-family:"Gotham-Regular";
+    color:#2C373B;
+    font-size: 3em;
+    letter-spacing: .09em;
+}
+
+/*---------------------------Header CTM!! :@--------------------------------*/
+.Header{
+    height: 61px;
+    background:rgba(44, 55, 59, 0.75);
+
+    /*MENU PEGAJOZO
+    position: fixed;
+    top:0;
+    width: 100%;
+    z-index: 1;*/
+
+	position: fixed;
+    top:0;
+    width: 100%;
+    z-index: 2;
+    -webkit-transition: top .3s ease;
+    -o-transition: top .3s ease;
+    transition: top .3s ease;
+}
+
+.Header .Contenedor{
+    max-height: 1050px;
+    max-width: 1680px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 90%;
+    margin: auto;
+    height: 100%;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    overflow: hidden;
+    /*background: blue;*/
+}
+
+    .logo{
+        width: 55px; /*TAMAÑO DEL LOGO HACER RESPOSIVE*/
+        margin: 2.5px 0 0 21px;
+}
+
+/*---------------------ESTILO MENU-------------------*/
+nav{
+    top: 60px;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+}
+
+
+	#btn-menu{
+		display:none;
+	}
+
+	nav label{
+		color: #fff;
+		font-size: 30px;
+    	display: none;
+		cursor:pointer;
+
+	}
+
+    .Menu{ /*HEADER NAV UL*/
+        list-style: none;
+    }
+
+        .Menu-Items{ /*HEADER NAV UL LI*/
+            float: left;
+        }
+
+            .Menu-Link, .Menu-Linka{ /*HEADER NAV UL LI A*/
+                display: block;
+                color: #fff;
+                text-decoration: none;
+                padding: 20.5px;
+                -webkit-transition: all .5s ease;
+                -o-transition: all .5s ease;
+                transition: all .5s ease;
+                font-family: "Gotham-Book";
+                border-bottom: 1px solid transparent;
+            }
+
+            .Menu-Link:hover, .Menu-Linka:hover{
+                border-bottom: 1px solid #FDC236;
+                background: rgba(37, 35, 31, 0.49);
+            }
+/*---------------------------BANNER--------------------------------*/
+.Banner{
+    /*margin-top: -61px; QUITAR PARA MENU PEGAJOZO -61 PARA NORMAL Y ACOMODAR LOS RESPONSIVE*/
+    position: relative;
+    z-index: 0;
+    height: 100%;
+    /*background: red;*/
+}
+
+.Banner-img{
+    height: 100%;
+    width: 100%;
+}
+.Contenedor-txt{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+        -ms-transform: translateX(-50%) translateY(-50%);
+            transform: translateX(-50%) translateY(-50%);
+    width: 100%;
+    color:#fff;
+    text-align: center;
+    background:rgba(44, 55, 59, 0.1);
+}
+
+.Contenedor-btn{ /*CONTENEDOR DEL BOTON DEL INDEX PARA MOVER*/
+    position: absolute;
+    top:85%;
+    left: 50%;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+        -ms-transform: translateX(-50%) translateY(-50%);
+            transform: translateX(-50%) translateY(-50%);
+}
+
+.Banner-Titulo{
+    color:#FDC236;
+    font-family: "Gotham-Medium";
+    font-size: 5em;
+    letter-spacing: .1em;
+}
+
+.Banner-txt-arriba{
+    color:#2C373B;
+    font-size: 1.8em;
+    letter-spacing: .8em;
+    font-family: "Gotham-Book";
+}
+
+.Banner-txt-abajo{
+    color:#fff;
+    letter-spacing: .1em;
+}
+
+.Btn-Banner{
+    color: #fff;
+    text-decoration: none;
+    -webkit-box-shadow: inset 0 0 0 2px #fff;
+            box-shadow: inset 0 0 0 2px #fff;
+    border: none;
+    padding: 15px;
+    border-radius: 5px;
+    outline: none;
+    font-size: 18px;
+    -webkit-transition:  all .5s ease;
+    -o-transition:  all .5s ease;
+    transition:  all .5s ease;
+    font-family: "Gotham-Medium";
+}
+
+.Btn-Banner:hover{
+    background: rgb(255, 255, 255);
+    color: #131313;
+    font-weight: 400;
+}
+
+.Promo-1{
+   /*background: red;*/
+  width: 100vw;
+  height: 100vh;
+
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+.Fondo-1{
+  background: url("../img/BG-1.jpg") center no-repeat;
+  background-size: cover;
+}
+.Fondo-1VE{
+  background: url("../img/BG-1VE.jpg") center no-repeat;
+  background-size: cover;
+}
+.Fondo-2{
+  background: url("../img/BG-2.jpg") center no-repeat;
+  background-size: cover;
+}
+.Fondo-3{
+    background: url("../img/BG-3.jpg") center no-repeat;
+    background-size: cover;
+}
+.Fondo-3VE{
+    background: url("../img/BG-3VE.jpg") center no-repeat;
+    background-size: cover;
+}
+.Contenedor-SS{
+   /*background: green;*/
+  width: 90%;
+  height: 90%;
+
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+.Contenedor-SSW{
+   /*background: pink;*/
+  width: 90%;
+  height: 90%;
+
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+.Lado-Iz{
+   /*background: yellow;*/
+  height: 100%;
+  width: 60%;
+  padding-left: 5%;
+
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+
+  justify-content: center;
+  align-items: flex-start;
+  overflow: hidden;
+}
+.Premisa{
+  color:#fff;
+  font-size: 2em;
+  text-transform: uppercase;
+}
+.Titulo-Premisa{
+  margin-top: -10px;
+  margin-bottom: 30px;
+  color: #fff;
+  font-size: 4em;
+  font-weight: bolder;
+  text-transform: uppercase;
+}
+.btn-premisa, .btn-premisa-2{
+  text-decoration: none;
+  border: 2px solid #fff;
+  border-radius: 5px;
+  padding: 10px 15px;
+  text-transform: uppercase;
+  font-size: 1em;
+  font-weight: 600;
+  color: #fff;
+  transition: all .5s ease;
+}
+.btn-premisa:hover{
+  background: #12b3de;
+  border: 2px solid #12b3de;
+  color:#fff;
+}
+.Lado-Der{
+   /*background: blue;*/
+  background: url("../img/SSBG-1.png") center no-repeat;
+  background-size: contain;
+  height: 100%;
+  width: 40%;
+  overflow: hidden;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.Lado-Der-VE{
+   /*background: blue;*/
+  background: url("../img/SSBG-2.png") center no-repeat;
+  background-size: auto;
+  height: 100%;
+  width: 40%;
+  overflow: hidden;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.Lado-Der-2{
+   /*background: brown;*/
+   height: 100%;
+   width: 60%;
+   padding-right: 5%;
+
+   display: flex;
+   flex-direction: column;
+   flex-wrap: wrap;
+
+   justify-content:center;
+   align-items: flex-end;
+   text-align: right;
+   overflow: hidden;
+}
+.Color{
+  color: #202020;
+}
+.Color-2{
+    color:#fff;
+}
+
+.btn-premisa-3{
+  text-decoration: none;
+  border: 2px solid #fff;
+  border-radius: 5px;
+  padding: 10px 15px;
+  text-transform: uppercase;
+  font-size: 1em;
+  font-weight: 600;
+  color: #fff;
+  transition: all .5s ease;
+}
+.btn-premisa-3:hover, .btn-premisa-2:hover{
+  background: #FDC236;
+  border: 2px solid #FDC236;
+  color:#fff;
+}
+.Lado-Iz-2{
+   /*background: pink;*/
+  background: url("../img/Separador.png")center no-repeat;
+  background-size: contain;
+  width: 40%;
+  height: 100%;
+  padding: 0px 5%;
+
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.Delay-1{
+  animation-delay: 1s;
+}
+.Delay-2{
+  animation-delay: 2s;
+}
+
+/*---------------------------SEPARADOR 1--------------------------------*/
+
+.S-Banner-Conocenos{
+    height: 10%;
+    background: #FDC236;
+    border-bottom: 1px solid #ececec;
+}
+
+.S-Banner-Conocenos .Contenedor{
+    max-height: 1050px;
+    max-width: 1680px;
+    height: 100%;
+    width: 90%;
+    margin: auto;
+
+    /*FLEX BOX EN EL PADRE*/
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+
+    -webkit-box-pack:end;
+
+        -ms-flex-pack:end;
+
+            justify-content:flex-end;
+    -webkit-box-align:end;
+        -ms-flex-align:end;
+            align-items:flex-end;
+    overflow: hidden;
+
+    /*background: blue;*/
+}
+
+.S-Banner-Conocenos .Contenedor .Forma{
+    height: 100%;
+    width: 70%;
+    background: url('../img/Separador-1.png') no-repeat; /*SIN CENTER PARA QUE LOS BORDES QUEDEN AL RAZ*/
+    background-size: cover;
+
+    /*FLEX BOX EN EL PADRE*/
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+
+    -webkit-box-pack: center;
+
+        -ms-flex-pack: center;
+
+            justify-content: center;
+    -webkit-box-align:center;
+        -ms-flex-align:center;
+            align-items:center;
+    overflow: hidden;
+}
+
+.Rocket, .Sales, .Safe{
+    width: 25%;
+    margin: 0 5px 0 0;
+}
+
+
+/*.Rocket{
+    background: pink;
+}
+
+.Sales{
+    background: skyblue;
+}
+
+.Safe{
+    background: pink;
+}*/
+
+.Rocket img, .Sales img, .Safe img{
+    width: 15%;
+}
+
+.Rocket p, .Sales p, .Safe p{
+    font-family: "Gotham-Bold";
+    font-size: 0.9em;
+    color: #232323;
+}
+
+/*---------------------------PAGINA 2--------------------------------*/
+
+.Pagina-2{
+    height: 100%;
+
+    /*FLEX BOX EN EL PADRE*/
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+
+    -webkit-box-pack:center;
+
+        -ms-flex-pack:center;
+
+            justify-content:center;
+    -webkit-box-align:center;
+        -ms-flex-align:center;
+            align-items:center;
+    background:white;
+}
+
+.Pagina-2 .Contenedor{
+    max-height: 1050px;
+    max-width: 1680px;
+    width: 90%;
+    height: 90%;
+
+    /*FLEX BOX EN EL PADRE*/
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+
+    -webkit-box-pack:center;
+
+        -ms-flex-pack:center;
+
+            justify-content:center;
+    -webkit-box-align:end;
+        -ms-flex-align:end;
+            align-items:flex-end;
+    overflow: hidden;
+    /*background:brown;*/
+}
+
+.Pagina-2 .Contenedor .Conocenos-descripcion{
+    text-align: center;
+}
+
+.Pagina-2 .Contenedor .Contenedor-detalles{
+    height: 60%;
+    width: 100%;
+
+    /*FLEX BOX EN EL PADRE*/
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+
+    -webkit-box-pack:justify;
+
+        -ms-flex-pack:justify;
+
+            justify-content:space-between; /*AQUI SE  MODIFICA EL ESPACIO DE LOS CONTENEDORES*/
+    -webkit-box-align:center;
+        -ms-flex-align:center;
+            align-items:center;
+    overflow: hidden;
+    /*background: azure;*/
+}
+
+
+.Mision, .Vision, .Fortalezas{
+    height: 90%;
+    width: 24%;
+    -webkit-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+    border: 1px solid #e4e4e4; /*MODIFICADO AQUI*/
+    text-align: center;
+    -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+                0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+                0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin: 1%;
+    overflow: hidden;
+    background: white;
+}
+
+.Mision:hover, .Vision:hover, .Fortalezas:hover{
+    -webkit-transform: scale(1.02);
+        -ms-transform: scale(1.02);
+            transform: scale(1.02);
+}
+
+.Pagina-2 .Contenedor .Contenedor-detalles .Img-Detalles{
+    height: 50%;
+    width: 100%;
+    /*background: yellow;*/
+}
+
+.Mision p, .Vision p, .Fortalezas p{
+    padding: 9% 5% 0 5%;
+    width: 100%;
+
+}
+
+.Leer-mas{
+    color: #FDC236;
+    font-family: "Gotham-Medium";
+    text-decoration: none;
+    letter-spacing: .1em;
+
+    /*BEGIN COPY*/
+    position: relative;
+    font-weight:bold;
+    margin: 0px 15px;
+}
+
+.Leer-mas:after{
+    position: absolute;
+    bottom: 7px;
+    left: 0px;
+    width: 100%;
+    height: 4px;
+    background-color: #FFD743;
+    content: "";
+    opacity: 0;
+    -webkit-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+    -webkit-transform: translateY(20px);
+        -ms-transform: translateY(20px);
+            transform: translateY(20px);
+}
+
+.Leer-mas:hover:after{
+    opacity:1;
+    -webkit-transform: translateY(15px);
+        -ms-transform: translateY(15px);
+            transform: translateY(15px);
+}
+/*END COPY*/
+
+/*---------------------------SEPARADOR 2--------------------------------*/
+
+.S-Conocenos-Productos{
+    background: -webkit-gradient(linear, left top, right top, color-stop(50%, #FDC236), color-stop(50%, #2C373B));
+    background: -webkit-linear-gradient(left, #FDC236 50%, #2C373B 50%);
+    background: -o-linear-gradient(left, #FDC236 50%, #2C373B 50%);
+    background: linear-gradient(90deg, #FDC236 50%, #2C373B 50%);
+    height: 10%;
+    overflow: hidden;
+}
+
+.S-Conocenos-Productos .Contenedor{
+    max-height: 1050px;
+    max-width: 1680px;
+    height: 100%;
+    width: 90%;
+    margin: auto;
+
+    /* USANDO FLEXBOX*/
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+
+    -webkit-box-pack: center;
+
+        -ms-flex-pack: center;
+
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    overflow: hidden;
+    /*background: blue;*/
+}
+
+.S-Conocenos-Productos .Contenedor .Forma-Amarilla{
+    background: url('../img/Separador-2.png') no-repeat;
+    background-size: cover;
+    height: 100%;
+    width: 85%;
+
+    /*USANDO FLEXBOX*/
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+
+    -webkit-box-pack: end;
+
+        -ms-flex-pack: end;
+
+            justify-content: flex-end;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    overflow: hidden;
+}
+
+.S-Conocenos-Productos .Contenedor .Forma-Amarilla p{
+    font-family: "Gotham-Bold";
+    font-size: .9em;
+    color:#232323;
+    width: 40%;
+    text-align: right;
+    margin-right: 10%;
+    /*background: grey;*/
+}
+
+.S-Conocenos-Productos .Contenedor .Contenedor-Logos-RedesSociales{
+    width: 15%;
+
+    /* USANDO FLEXBOX*/
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+
+    -webkit-box-pack:justify;
+
+        -ms-flex-pack:justify;
+
+            justify-content:space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    overflow: hidden;
+    /*background: pink;*/
+}
+.S-Conocenos-Productos .Contenedor .Contenedor-Logos-RedesSociales a{
+    text-decoration: none;
+}
+
+.S-Conocenos-Productos .Contenedor .Contenedor-Logos-RedesSociales a img{
+    width: 70%;
+}
+
+/*---------------------------PAGINA 3--------------------------------*/
+
+.Pagina-3{
+    height: auto;/* 100&  PRODUCTO6 */
+    background: #425053;
+
+    /*ACTIVANDO FLEX BOX*/
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+
+    -webkit-box-pack: center;
+
+        -ms-flex-pack: center;
+
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+
+.Pagina-3 .Contenedor{
+    /*max-height: 1050px;  PRODUCTO6*/
+	min-height:100%;
+    max-width: 1680px;
+    width: 90%;
+    height: auto; /* 90%  PRODUCTO6 */
+    overflow: hidden;
+	margin: 2% 0; /* SIN MARGIN  PRODUCTO6 */
+    /*background: green;*/
+}
+
+.Contenedor-Filtros{
+    height: 5%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    overflow: hidden;
+    /*background: red;*/
+}
+
+.Filtro{
+    color:#fff;
+    text-decoration: none;
+    margin-left: 10px;
+    padding: 5px;
+    font-size: .8em;
+
+    border: none;
+    font-family: "Gotham-Book";
+    background: rgba(0,0,0,0);
+    -webkit-box-shadow: inset 0 0 0 1.5px #fff;
+    box-shadow: inset 0 0 0 1.5px #fff;
+    outline: none;
+    border-radius: 4px;
+    -webkit-transition: all .5s ease;
+    -o-transition: all .5s ease;
+    transition: all .5s ease;
+}
+
+ .Contenedor-Filtros a:active{ /*NUEVO ERAS ASI ->.Filtro-Seleccion*/
+    color: #fff;
+    text-decoration: none;
+    margin-left:  10px;
+    padding: 5px;
+    font-size: .8em;
+
+    border: none;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    background: #F57431;
+    border-radius: 4px;
+    -webkit-transition: all .5s ease;
+    -o-transition: all .5s ease;
+    transition: all .5s ease;
+}
+
+
+.Contenedor-Titulo{
+    height: 25%;
+    margin: 3% 0;
+    display: -webkit-box;
+
+    display: -ms-flexbox;
+
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; /* FLEX EXPECIAL PARA ALINEARLOS ARRIBA Y ABAJO*/
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+
+    -webkit-box-pack:center;
+
+        -ms-flex-pack:center;
+
+            justify-content:center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    overflow: hidden;
+    /*background: brown;*/
+}
+
+.Contenedor-Titulo p, .Contenedor-Titulo h2{
+    color: #fff;
+}
+
+.Contenedor-Todos-Productos{
+	min-height: 65%; /* PRODUCTO6 */
+    height: auto; /* 65%  PRODUCTO6 */
+    overflow:hidden;
+
+    /*NUEVO*/
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -ms-flex-line-pack: start;
+        align-content: flex-start; /*NO SE PUEDE USAR ALIGN-ITEM PORQUE NO SIRVE PARA MAS DE 2 FILAS*/
+    /*background: grey;*/
+}
+
+.Tarjeta{
+    height: 22vh; /*CAMBIO FIREFOX*/
+    width: 30%;
+    max-width: 400px;
+    max-height: 250px;
+    -webkit-box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.7);
+            box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.7);
+    margin: 1%;
+	-webkit-transition: all .5s ease;
+	-o-transition: all .5s ease;
+	transition: all .5s ease;
+    display: -webkit-box;
+
+    display: -ms-flexbox;
+
+    display: none;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+
+    -webkit-box-pack: center;
+
+        -ms-flex-pack: center;
+
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+
+    overflow: hidden;
+    /*background: black;
+    border: 1px solid yellow;*/
+}
+
+.Tarjeta-Izquierda{
+    background: #213140;
+    height: 100%;
+    width: 40%;
+
+    display: -webkit-box;
+
+    display: -ms-flexbox;
+
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+
+    -webkit-box-pack: center;
+
+        -ms-flex-pack: center;
+
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    overflow: hidden;
+}
+
+.Tarjeta-Izquierda img{
+    height:  80%;
+}
+
+
+.Tarjeta-Derecha{
+    background: #fff;
+    height: 100%;
+    width: 60%;
+    overflow: hidden;
+
+    display: -webkit-box;
+
+    display: -ms-flexbox;
+
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+
+    -webkit-box-pack: center;
+
+        -ms-flex-pack: center;
+
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+
+.Contenedor-Tarjeta-Derecha{
+    width: 90%;
+    height: 80%;
+    /*background: yellow;*/
+}
+
+    .Tarjeta-Derecha .Produto-Titulos{
+        height: 44%;
+        width: 100%;
+        overflow: hidden;
+        /*background: blue;*/
+    }
+
+    .Tarjeta-Derecha .Produto-Titulos .Tipo{
+        font-size: .9em;
+        color: #6F6F6F;
+    }
+
+    .Tarjeta-Derecha .Produto-Titulos .Nombre{
+        font-family: "Gotham-Medium";
+        font-size: 1.1em; /*CAMBIO FIREFOX*/
+        line-height: .9em;
+        color: #434343;
+        width: 100%;
+        /*background: yellow;*/
+        /*BUSCAR PARA ESCONDER LOS BORDES QUE
+        SE PONEN AUTOMATICAMENTE EN EL TITULO
+        Y QUE CUANDO SE ESCRIBA PEGADO SALTE
+        A LA LINEA DE ABAJO MAX CARACTERES 20 */
+    }
+
+
+.Tarjeta-Derecha .Producto-Detalles{
+    height: 29%;
+    width: 100%;
+    overflow: hidden;
+
+    font-size: .85em;
+
+    display: -webkit-box;
+
+    display: -ms-flexbox;
+
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap; /*ERA WRAP*/
+
+    -ms-flex-pack: distribute;
+
+        justify-content: space-around; /*MODIFICADO ORIGINAL BETWEEN*/
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    /*background: skyblue;*/
+}
+
+.Peso-Letra, .Dimensiones-Letra{
+    font-size: .9em;
+}
+
+.Tarjeta-Derecha .Producto-Detalles .Peso{
+    width: 23%;
+    margin: 1px;
+    overflow: hidden;
+    /*background: yellow;*/
+}
+
+.Peso-Numero, .Dimensiones-Numero {
+    color: #6F6F6F;
+    font-family: "Gotham-medium"
+}
+
+.Tarjeta-Derecha .Producto-Detalles .Dimensiones{
+    width: 33%;
+    margin: 1px;
+    overflow: hidden;
+    /*background: yellow;*/
+}
+
+	.PesoKg-Numero, .PesoLbs-Numero{
+		font-family: "Gotham-medium";
+		color: #6F6F6F;
+
+
+	}
+
+.Tarjeta-Derecha .Producto-Detalles .Nuevo{
+    width: auto; /*ERA 27%*/
+    background: #F57431; /*#21F461*/
+    border-radius: 5px;
+    padding: 2px;
+    margin: 1px;
+    overflow: hidden;
+}
+
+.Tarjeta-Derecha .Producto-Detalles .Nuevo .Producto-Nuevo{
+    color: #fff;
+    font-family: "Gotham-Medium";
+}
+
+.Tarjeta-Derecha .Btn-Producto-Detalles{
+    height: 27%;
+    width: 100%;
+
+    display: -webkit-box;
+
+    display: -ms-flexbox;
+
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+
+    -webkit-box-pack: center;
+
+        -ms-flex-pack: center;
+
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    overflow: hidden;
+    /*background: aquamarine;*/
+}
+
+.Tarjeta-Derecha .Btn-Producto-Detalles a{
+    color: #FDC236;
+    text-decoration: none;
+    -webkit-box-shadow: inset 0 0 0 2px #FDC236;
+            box-shadow: inset 0 0 0 2px #FDC236;
+    border: none;
+    -webkit-transition: all .5s ease;
+    -o-transition: all .5s ease;
+    transition: all .5s ease;
+    font-family: "Gotham-Medium";
+    padding: 4.5px; /*CAMBIO FIREFOX*/
+    border-radius: 5px;
+}
+
+.Tarjeta-Derecha .Btn-Producto-Detalles a:hover{
+    background: #FDC236;
+    color: #fff;
+}
+
+.Contenedor-Modo-De-Uso{
+    height: 5%;
+
+
+    display: -webkit-box;
+
+
+    display: -ms-flexbox;
+
+
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+
+    -webkit-box-pack: end;
+
+        -ms-flex-pack: end;
+
+            justify-content: flex-end;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    overflow: hidden;
+    /*background: yellow;*/
+}
+
+.Contenedor-Modo-De-Uso .Modo-De-Uso{
+    /*max-height: 50px;
+    max-width: 50px;*/
+
+    width: 30px;
+    height: 30px;
+    background: #EB0924;
+    border-radius: 100%;
+    /*overflow: hidden;*/
+    -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+
+}
+
+.Contenedor-Modo-De-Uso .Modo-De-Uso a{
+    font-family: "Gotham-Medium";
+    color: #fff;
+    text-decoration: none;
+    background: #EB0924;
+
+    display: -webkit-box;
+
+    display: -ms-flexbox;
+
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+
+    -webkit-box-pack: center;
+
+        -ms-flex-pack: center;
+
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+
+    line-height: 30px;
+    border-radius: 100%;
+    -webkit-box-shadow: inset 0 0 0 2px #fff;
+            box-shadow: inset 0 0 0 2px #fff;
+    font-size: .6em;
+}
+
+.H2-Overlay{
+    color:#fff;
+    text-shadow: 0px -1px 0px rgba(0,0,0,0.4);
+}
+
+/*BEGIN COPY*/
+.tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black; /* If you want dots under the hoverable text */
+}
+
+/* Tooltip text */
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: rgba(44, 55, 59, 0.999);
+    color: #fff;
+    text-align: center;
+    padding: 1px 0;
+    border-radius: 6px;
+
+    /* Position the tooltip text - see examples below! */
+    position: absolute;
+    z-index: 1;
+    top: -1px;
+    right: 105%;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}
+
+/* The Overlay (background) */
+.overlay {
+    /* Height & width depends on how you want to reveal the overlay (see JS below) */
+    height: 100%;
+    width: 100%;
+    -webkit-transform: translateX(-100%);
+        -ms-transform: translateX(-100%);
+            transform: translateX(-100%);
+    position: fixed; /* Stay in place */
+    z-index: 2; /* Sit on top */
+    left: 0;
+    top: 0;
+    background-color: rgb(0,0,0); /* Black fallback color */
+    background-color: rgba(0,0,0, 0.96); /* Black w/opacity */
+    overflow-x: hidden; /* Disable horizontal scroll */
+    -webkit-transition: all .5s ease;
+    -o-transition: all .5s ease;
+    transition: all .5s ease; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+}
+
+/* Position the content inside the overlay */
+.overlay-content {
+    position: relative;
+    top: 25%; /* 25% from the top */
+    width: 100%; /* 100% width */
+    text-align: center; /* Centered text/links */
+    margin-top: 30px; /* 30px top margin to avoid conflict with the close button on smaller screens */
+}
+
+/* The navigation links inside the overlay */
+.overlay a {
+    padding: 8px;
+    margin: 2% 0;
+    text-decoration: none;
+    font-size: 1.5em;
+    color: #818181;
+    display: block; /* Display block instead of inline */
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s; /* Transition effects on hover (color) */
+}
+
+/* When you mouse over the navigation links, change their color */
+.overlay a:hover, .overlay a:focus {
+    color: #f1f1f1;
+}
+
+/* Position the close button (top right corner) */
+.overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+}
+/*END COPY*/
+
+/*--------------------------------SEPARADOR 3-------------------------------*/
+.S-Productos-Calidad{
+    background: -webkit-gradient(linear,  left top, right top,  color-stop(10%, #FDC236) ,color-stop(10%, #2C373B));
+    background: -webkit-linear-gradient(left,  #FDC236 10% ,#2C373B 10%);
+    background: -o-linear-gradient(left,  #FDC236 10% ,#2C373B 10%);
+    background: linear-gradient(90deg,  #FDC236 10% ,#2C373B 10%);
+    height: 10%;
+
+}
+
+.S-Productos-Calidad .Contenedor{
+    height: 100%;
+    width: 90%;
+    max-width: 1680px;
+    margin: auto;
+    overflow: hidden;
+
+    display: -webkit-box;
+
+    display: -ms-flexbox;
+
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+
+    -webkit-box-pack: center;
+
+        -ms-flex-pack: center;
+
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    /*background: blue;*/
+}
+
+.S-Productos-Calidad .Contenedor .Forma-Amarilla-2{
+    background: url('../img/Separador-3.png')no-repeat;
+    background-size: cover;
+    height: 100%;
+    width: 40%;
+}
+
+.S-Productos-Calidad .Contenedor .Promocion{
+    height: 100%;
+    width: 60%;
+    overflow: hidden;
+
+    display: -webkit-box;
+
+    display: -ms-flexbox;
+
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+
+    -webkit-box-pack: center;
+
+        -ms-flex-pack: center;
+
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    /*background: green;*/
+}
+
+.Promocion-Textos{
+    margin: 0 5%;
+    /*background: navy;*/
+}
+
+.Promocion-Textos p{
+    font-size: 0.9em;
+    color:#fff;
+}
+
+    .Interes{
+        font-family: "Gotham-Bold";
+    }
+
+     .btn-Contactanos{
+        text-decoration: none;
+        color: #fff;
+        font-family: "Gotham-Medium";
+        border: none;
+
+        padding: 10px;
+        -webkit-box-shadow: inset 0 0 0 2px #fff;
+                box-shadow: inset 0 0 0 2px #fff;
+        background: rgba(0,0,0,0);
+
+        border-radius: 5px;
+        -webkit-transition: all .5s ease;
+        -o-transition: all .5s ease;
+        transition: all .5s ease;
+    }
+
+    .btn-Contactanos:hover{
+        background: #fff;
+        color: #2C373B;
+    }
+
+/*--------------------------------PAGINA 4-------------------------------*/
+
+.Pagina-4{
+    height: 100%;
+
+    display: -webkit-box;
+
+    display: -ms-flexbox;
+
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+
+    -webkit-box-pack: center;
+
+        -ms-flex-pack: center;
+
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background: white;
+}
+
+.Pagina-4 .Contenedor{
+    max-width:1680px;
+    max-height:1050px;
+    height: 90%;
+    width: 90%;
+    overflow: hidden;
+
+    display: -webkit-box;
+
+    display: -ms-flexbox;
+
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+
+    -webkit-box-pack: center;
+
+        -ms-flex-pack: center;
+
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    /*background: aqua;*/
+
+}
+
+.Textos{
+    height: 30%;
+    width: 100%;
+
+    display: -webkit-box;
+
+    display: -ms-flexbox;
+
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+
+    -webkit-box-pack: center;
+
+        -ms-flex-pack: center;
+
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+
+    text-align: center;
+    overflow: hidden;
+    /*background: azure;*/
+}
+
+.Textos .Descripcion-Pagina{
+    height: 55%;
+
+    display: -webkit-box;
+
+    display: -ms-flexbox;
+
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    overflow: hidden;
+
+    -webkit-box-pack: center;
+
+        -ms-flex-pack: center;
+
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    /*background: blue;*/
+}
+
+
+.Titulos-Pagina{
+    height: 45%;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+.Todas-Pruebas{
+    height: 70%;
+    width: 100%;
+    overflow: hidden;
+
+    display: -webkit-box;
+
+    display: -ms-flexbox;
+
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap:wrap;
+        flex-wrap:wrap;
+
+    -webkit-box-pack: center;
+
+        -ms-flex-pack: center;
+
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    /*background: yellow;*/
+}
+
+.Tarjeta-Prueba{
+    height: 90%;
+    width: 22%;
+    overflow: hidden;
+	-webkit-transition: all .3s ease;
+	-o-transition: all .3s ease;
+	transition: all .3s ease;
+    display: -webkit-box;
+
+    display: -ms-flexbox;
+
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-wrap:nowrap;
+        flex-wrap:nowrap;
+
+    -webkit-box-pack: center;
+
+        -ms-flex-pack: center;
+
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+
+    margin:0 1%;
+    /*background: black;*/
+}
+
+.Tarjeta-Prueba:hover{
+    -webkit-box-shadow:0 9px 20px 0 rgba(28, 30, 35, 0.2);
+            box-shadow:0 9px 20px 0 rgba(28, 30, 35, 0.2);
+    border-color: transparent !important;
+}
+
+.Tarjeta-Prueba .Imagen-Contenedor{
+    width: 100%;
+    height: 40%;
+
+    display: -webkit-box;
+
+    display: -ms-flexbox;
+
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+
+    -webkit-box-pack: center;
+
+        -ms-flex-pack: center;
+
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+
+    /*background: purple;*/
+}
+.Tarjeta-Prueba .Imagen-Contenedor img{
+    height: 100%;
+}
+
+
+.Titulos-Contenedor{
+    height: 18%;
+    width: 100%;
+    padding: 5%;
+    text-align: center;
+    overflow: hidden;
+    /*background: pink;*/
+}
+
+.Palabra-Prueba{
+    display: inline-block;
+}
+
+.Tipo-Prueba{
+    font-family: "Gotham-Book";
+    font-size: 1em;
+	font-weight: bold;
+}
+
+.Descripcion-Contenedor{
+    height:28%;
+    padding: 5% 4% 0px 4%;
+
+    /*text-align: justify; MODIFIQUE AQUI*/
+    overflow: hidden;
+    /*background: bisque;*/
+}
+
+.Descripcion-Contenedor .Descripcio-Prueba{
+    font-family: "Gotham-Book";
+    font-size: .85em;
+}
+
+.Leer-Mas-Contenedor{
+    height: 14%;
+    width: 100%;
+
+
+
+    display: -webkit-box;
+
+
+    display: -ms-flexbox;
+
+
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+
+    -ms-flex-wrap: wrap;
+
+        flex-wrap: wrap;
+
+    -webkit-box-pack: center;
+
+        -ms-flex-pack: center;
+
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    /*background: beige;*/
+}
+
+.Btn-leer-mas{
+    color: #ED825E;
+    font-family: "Gotham-Bold";
+    text-decoration:none;
+    -webkit-transition: all .5s ease;
+    -o-transition: all .5s ease;
+    transition: all .5s ease;
+
+/*BEGIN COPY*/
+    position: relative;
+    font-weight:bold;
+    margin: 0px 15px;
+}
+
+.Btn-leer-mas:after{
+    position: absolute;
+    bottom: 7px;
+    left: 0px;
+    width: 100%;
+    height: 4px;
+    background-color: #ED825E;
+    content: "";
+    opacity: 0;
+    -webkit-transition: all 0.3s ease 0s;
+    -o-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+    -webkit-transform: translateY(20px);
+        -ms-transform: translateY(20px);
+            transform: translateY(20px);
+}
+
+.Btn-leer-mas:hover:after{
+    opacity:1;
+    -webkit-transform: translateY(15px);
+        -ms-transform: translateY(15px);
+            transform: translateY(15px);
+}
+/*END COPY*/
+/*--------------------------------SEPARADOR 4-------------------------------*/
+
+.S-Calidad-Contactanos{
+    height: 10%;
+    width: 100%;
+    background: #FDC236;
+    overflow: hidden;
+
+    display: -webkit-box;
+
+    display: -ms-flexbox;
+
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+
+    -webkit-box-pack: center;
+
+        -ms-flex-pack: center;
+
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+
+.S-Calidad-Contactanos p{
+        color: #fff;
+        font-family: "Gotham-Bold";
+        font-size: 2em;
+        max-width: 1680px;
+}
+
+/*--------------------------------PAGINA 5-------------------------------*/
+
+.Pagina-5{
+    height: 100%;
+    background: url('../img/BG-Contactanos.jpg') no-repeat center;
+    background-size: cover;
+
+    display: -webkit-box;
+
+    display: -ms-flexbox;
+
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+
+    -webkit-box-pack: center;
+
+        -ms-flex-pack: center;
+
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+
+.Pagina-5 .Contenedor{
+    max-width: 1680px;
+    max-height: 1050px;
+    width: 90%;
+    height: 90%;
+    overflow: hidden;
+
+    display: -webkit-box;
+
+    display: -ms-flexbox;
+
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+
+    -webkit-box-pack: center;
+
+        -ms-flex-pack: center;
+
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    /*background: blue;*/
+}
+
+.Textos-Pag-5{
+    height: 30%;
+    width:100%;
+
+    display: -webkit-box;
+
+    display: -ms-flexbox;
+
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+
+    -webkit-box-pack: center;
+
+        -ms-flex-pack: center;
+
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    /*background: orange;*/
+}
+
+.Textos-Pag-5 p, .Textos-Pag-5 h2{
+    color: #fff;
+}
+
+.Contenedor-inputs{
+    height: 70%;
+    width: 70%;
+    overflow: hidden;
+    /*background: red;*/
+}
+
+.Formulario-Consulta{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 100%; /*CAMBIO FIREFOX*/
+}
+
+.Formulario-Consulta [type=text], .Formulario-Consulta [type=email],
+.Formulario-Consulta textarea, .Formulario-Consulta [type=tel]{
+    background: rgba(0,0,0,0);
+    border: 2px solid #fff;
+    border-radius: 3px;
+    color: #fff;
+    outline: none;
+    -webkit-transition: all .5s ease;
+    -o-transition: all .5s ease;
+    transition: all .5s ease;
+    text-transform:none;
+}
+
+.Formulario-Consulta [type=text]:focus, .Formulario-Consulta [type=email]:focus,
+.Formulario-Consulta textarea:focus, .Formulario-Consulta [type=tel]:focus{
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.Formulario-Consulta [type=text], .Formulario-Consulta [type=email],
+.Formulario-Consulta [type=tel]{
+    height: 8%;
+    width: 30%;
+    padding: 10px;
+}
+
+.Formulario-Consulta textarea{
+    height: 70%;
+    width: 100%;
+    padding: 10px;
+    margin-top: 2%;
+}
+
+.Formulario-Consulta ::Placeholder{
+    color: #d0d1cd;
+}
+
+.Formulario-Consulta button{
+    color: #fff;
+    font-family: "Gotham-Bold";
+    outline: none;
+    border: none;
+    border-radius: 2px;
+    padding: 2% 1%;
+    background: #FDC236;
+    -webkit-transition: all .5s ease;
+    -o-transition: all .5s ease;
+    transition: all .5s ease;
+    font-size: .9em;
+    margin-top: 2%;
+}
+
+.Formulario-Consulta button:hover{
+    background: #f1ac0a;
+}
+
+.Contenedor-Info{
+    height: 70%;
+    width: 30%;
+    overflow: hidden;
+    /*background: brown;*/
+}
+
+.Contenedor-Info .Titulo-Info{
+    height: 12%;
+    overflow: hidden;
+    /*background: black;*/
+}
+
+.Contenedor-Info .Titulo-Info p{
+    font-family: "Gotham-Book";
+    color: #fff;
+    font-size: 1.6em;
+    text-align: center;
+}
+
+.Direccion-Info, .Tel-1, .Tel-2, .Tel-3, .Facebook-2, .Instagram-2, .Twitter-2{
+    overflow: hidden;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+
+
+    height: auto;
+    /*background: pink;*/
+}
+
+.Direccion-Info{
+    margin: 0% 5% 0 5%;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+}
+
+.Tel-1, .Tel-2, .Tel-3, .Facebook-2, .Instagram-2, .Twitter-2{
+    margin: 3% 5% 0 5%;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+
+.Contenedor-Info .Direccion-Info p, .Contenedor-Info .Tel-1 p,
+.Contenedor-Info .Tel-2 p, .Contenedor-Info .Tel-3 p, .Facebook-2 a,
+ .Instagram-2 a, .Twitter-2 a, .links-new{
+    color: #fff;
+    font-size: .9em;
+    text-decoration: none;
+}
+
+.Imagen-Info{
+    width: 6.8%;
+    /*background: yellow;*/
+}
+
+.Texto-Info{
+    width: 90%;
+    /*background: aqua;*/
+}
+
+/*--------------------------------Footer-------------------------------*/
+
+.Footer{
+    height: 5%;
+    width: 100%;
+    background: #202E31;
+
+}
+
+.Footer .Contenedor{
+    width: 90%;
+    height: 100%;
+    margin: auto;
+
+    display: -webkit-box;
+
+    display: -ms-flexbox;
+
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+
+    -webkit-box-pack: justify;
+
+        -ms-flex-pack: justify;
+
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    overflow:hidden;
+    /*background: blue;*/
+}
+
+.Footer .Contenedor .Logo-Letra{
+    width: 30%;
+    overflow: hidden;
+    /*background: black;*/
+}
+
+.Footer .Contenedor .Logo-Letra .Arriba{
+    font-family: "Gotham-Thin";
+    color: #fff;
+    display: block;
+    font-size: .7em;
+}
+
+.Footer .Contenedor .Logo-Letra .Abajo{
+    font-family: "Gotham-Medium";
+    color: #fff;
+    display: block;
+}
+
+.Footer .Contenedor .Devs-thx{
+    width: auto;
+    overflow: hidden;
+
+    display: -webkit-box;
+
+    display: -ms-flexbox;
+
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+
+    -webkit-box-pack: center;
+
+        -ms-flex-pack: center;
+
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    /*background: black;*/
+}
+
+.Devs-thx .Part-1{
+    color: #fff;
+    font-family: "Gotham-Book";
+    font-size: .6em;
+}
+
+.Devs-thx .Part-2{
+    height: 6pt;
+    display: inline-block;
+}
+
+.modal
+{
+    width:100%;
+    height:100%;
+    position:fixed;
+    top:0;
+    display:none;
+	z-index:2;
+}
+.modal_close
+{
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0, 0.96);
+    position:fixed;
+    top:0;
+}
+.close
+{
+    cursor:pointer;
+}
+.modal_main
+{
+    width:50%;
+    height:400px;
+    background-color:#fff;
+    z-index:4;
+    position:fixed;
+    top:16%;
+    border-radius:6px;
+    left:24%;
+    display:none;
+ -webkit-animation-duration: .5s;
+    -webkit-animation-delay: .0s;
+    -webkit-animation-fill-mode: both;
+    -moz-animation-fill-mode: both;
+    -o-animation-fill-mode: both;
+        -webkit-backface-visibility: visible!important;
+    -webkit-animation-name: fadeInRight;
+}
+@-webkit-keyframes fadeInRight{0%{opacity:0;-webkit-transform:translateX(20px)}100%{opacity:1;-webkit-transform:translateX(0)}}
+
+.modal_v
+{
+    width:100%;
+    height:100%;
+    position:fixed;
+    top:0;
+    display:none;
+	z-index:2;
+}
+.modal_close_v
+{
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0, 0.96);
+    position:fixed;
+    top:0;
+}
+.close_v
+{
+    cursor:pointer;
+}
+.modal_main_v
+{
+    width:50%;
+    height:400px;
+    background-color:#fff;
+    z-index:4;
+    position:fixed;
+    top:16%;
+    border-radius:6px;
+    left:24%;
+    display:none;
+    -webkit-animation-duration: .5s;
+    -webkit-animation-delay: .0s;
+    -webkit-animation-fill-mode: both;
+    -moz-animation-fill-mode: both;
+    -o-animation-fill-mode: both;
+        -webkit-backface-visibility: visible!important;
+    -webkit-animation-name: fadeInRight_v;
+}
+@-webkit-keyframes fadeInRight_v{0%{opacity:0;-webkit-transform:translateX(20px)}100%{opacity:1;-webkit-transform:translateX(0)}}
+
+.modal_f
+{
+    width:100%;
+    height:100%;
+    position:fixed;
+    top:0;
+    display:none;
+	z-index:2;
+}
+.modal_close_f
+{
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0, 0.96);
+    position:fixed;
+    top:0;
+}
+.close_f
+{
+    cursor:pointer;
+}
+.modal_main_f
+{
+    width:50%;
+    height:400px;
+    background-color:#fff;
+    z-index:4;
+    position:fixed;
+    top:16%;
+    border-radius:6px;
+    left:24%;
+    display:none;
+ -webkit-animation-duration: .5s;
+    -webkit-animation-delay: .0s;
+    -webkit-animation-fill-mode: both;
+    -moz-animation-fill-mode: both;
+    -o-animation-fill-mode: both;
+        -webkit-backface-visibility: visible!important;
+    -webkit-animation-name: fadeInRight_f;
+}
+@-webkit-keyframes fadeInRight_f{0%{opacity:0;-webkit-transform:translateX(20px)}100%{opacity:1;-webkit-transform:translateX(0)}}
+
+.modal_m
+{
+    width:100%;
+    height:100%;
+    position:fixed;
+    top:0;
+    display:none;
+	z-index:2;
+}
+.modal_close_m
+{
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0, 0.96);
+    position:fixed;
+    top:0;
+}
+.close_m
+{
+    cursor:pointer;
+}
+.modal_main_m
+{
+    width:50%;
+    height:400px;
+    background-color:#fff;
+    z-index:4;
+    position:fixed;
+    top:16%;
+    border-radius:6px;
+    left:24%;
+    display:none;
+ -webkit-animation-duration: .5s;
+    -webkit-animation-delay: .0s;
+    -webkit-animation-fill-mode: both;
+    -moz-animation-fill-mode: both;
+    -o-animation-fill-mode: both;
+        -webkit-backface-visibility: visible!important;
+    -webkit-animation-name: fadeInRight_m;
+}
+@-webkit-keyframes fadeInRight_m{0%{opacity:0;-webkit-transform:translateX(20px)}100%{opacity:1;-webkit-transform:translateX(0)}}
+
+#snackbar {
+        visibility: hidden;
+        min-width: 250px;
+        margin-left: -125px;
+        background-color: #333;
+        color: #fff;
+        text-align: center;
+        border-radius: 2px;
+        padding: 16px;
+        position: fixed;
+        z-index: 1;
+        right:0;
+        bottom: 30px;
+        font-size: 17px;
+    }
+
+    #snackbar.show {
+        visibility: visible;
+        -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+        animation: fadein 0.5s, fadeout 0.5s 2.5s;
+    }
+
+	#snackbar strong{
+		color:#fff;
+	}
+
+    @-webkit-keyframes fadein {
+        from {bottom: 0; opacity: 0;}
+        to {bottom: 30px; opacity: 1;}
+    }
+
+    @keyframes fadein {
+        from {bottom: 0; opacity: 0;}
+        to {bottom: 30px; opacity: 1;}
+    }
+
+    @-webkit-keyframes fadeout {
+        from {bottom: 30px; opacity: 1;}
+        to {bottom: 0; opacity: 0;}
+    }
+
+    @keyframes fadeout {
+        from {bottom: 30px; opacity: 1;}
+        to {bottom: 0; opacity: 0;}
+    }
+
+
+
+.show {
+  display:-webkit-box;
+  display:-ms-flexbox;
+  display:flex;
+	-webkit-transition: all .3s ease;
+	-o-transition: all .3s ease;
+	transition: all .3s ease;
+}
+
+/*RESPOSIVE - RESPONSIVE -RESPONSIVE - RESPONSIVE -RESPONSIVE - RESPONSIVE -RESPONSIVE - RESPONSIVE -RESPONSIVE - RESPONSIVE -RESPONSIVE*/
+/*RESPOSIVE - RESPONSIVE -RESPONSIVE - RESPONSIVE -RESPONSIVE - RESPONSIVE -RESPONSIVE - RESPONSIVE -RESPONSIVE - RESPONSIVE -RESPONSIVE*/
+/*RESPOSIVE - RESPONSIVE -RESPONSIVE - RESPONSIVE -RESPONSIVE - RESPONSIVE -RESPONSIVE - RESPONSIVE -RESPONSIVE - RESPONSIVE -RESPONSIVE*/
+/*RESPOSIVE - RESPONSIVE -RESPONSIVE - RESPONSIVE -RESPONSIVE - RESPONSIVE -RESPONSIVE - RESPONSIVE -RESPONSIVE - RESPONSIVE -RESPONSIVE*/
+/*RESPOSIVE - RESPONSIVE -RESPONSIVE - RESPONSIVE -RESPONSIVE - RESPONSIVE -RESPONSIVE - RESPONSIVE -RESPONSIVE - RESPONSIVE -RESPONSIVE*/
+/*RESPOSIVE - RESPONSIVE -RESPONSIVE - RESPONSIVE -RESPONSIVE - RESPONSIVE -RESPONSIVE - RESPONSIVE -RESPONSIVE - RESPONSIVE -RESPONSIVE*/
+/*RESPOSIVE - RESPONSIVE -RESPONSIVE - RESPONSIVE -RESPONSIVE - RESPONSIVE -RESPONSIVE - RESPONSIVE -RESPONSIVE - RESPONSIVE -RESPONSIVE*/
+/*RESPOSIVE - RESPONSIVE -RESPONSIVE - RESPONSIVE -RESPONSIVE - RESPONSIVE -RESPONSIVE - RESPONSIVE -RESPONSIVE - RESPONSIVE -RESPONSIVE*/
+/*RESPOSIVE - RESPONSIVE -RESPONSIVE - RESPONSIVE -RESPONSIVE - RESPONSIVE -RESPONSIVE - RESPONSIVE -RESPONSIVE - RESPONSIVE -RESPONSIVE*/
+/*RESPOSIVE - RESPONSIVE -RESPONSIVE - RESPONSIVE -RESPONSIVE - RESPONSIVE -RESPONSIVE - RESPONSIVE -RESPONSIVE - RESPONSIVE -RESPONSIVE*/
+/*RESPOSIVE - RESPONSIVE -RESPONSIVE - RESPONSIVE -RESPONSIVE - RESPONSIVE -RESPONSIVE - RESPONSIVE -RESPONSIVE - RESPONSIVE -RESPONSIVE*/
+/*RESPOSIVE - RESPONSIVE -RESPONSIVE - RESPONSIVE -RESPONSIVE - RESPONSIVE -RESPONSIVE - RESPONSIVE -RESPONSIVE - RESPONSIVE -RESPONSIVE*/
+/*RESPOSIVE - RESPONSIVE -RESPONSIVE - RESPONSIVE -RESPONSIVE - RESPONSIVE -RESPONSIVE - RESPONSIVE -RESPONSIVE - RESPONSIVE -RESPONSIVE*/
+/*RESPOSIVE - RESPONSIVE -RESPONSIVE - RESPONSIVE -RESPONSIVE - RESPONSIVE -RESPONSIVE - RESPONSIVE -RESPONSIVE - RESPONSIVE -RESPONSIVE*/
+/*RESPOSIVE - RESPONSIVE -RESPONSIVE - RESPONSIVE -RESPONSIVE - RESPONSIVE -RESPONSIVE - RESPONSIVE -RESPONSIVE - RESPONSIVE -RESPONSIVE*/
+/*RESPOSIVE - RESPONSIVE -RESPONSIVE - RESPONSIVE -RESPONSIVE - RESPONSIVE -RESPONSIVE - RESPONSIVE -RESPONSIVE - RESPONSIVE -RESPONSIVE*/
+/*RESPOSIVE - RESPONSIVE -RESPONSIVE - RESPONSIVE -RESPONSIVE - RESPONSIVE -RESPONSIVE - RESPONSIVE -RESPONSIVE - RESPONSIVE -RESPONSIVE*/
+/*RESPOSIVE - RESPONSIVE -RESPONSIVE - RESPONSIVE -RESPONSIVE - RESPONSIVE -RESPONSIVE - RESPONSIVE -RESPONSIVE - RESPONSIVE -RESPONSIVE*/
+
+
+@media screen and (max-width: 480px){ /*TELEFONOS VERTICALES*/
+	/*-----------------------------------------------COMIENZA RESPONSIVE GENERALES----------------------------------------*/
+	h2 {
+		font-size: 2em;
+		margin:10% 3% 3% 3%;
+    }
+
+	h3{
+		font-size:1em;
+	}
+	/*-----------------------------------------------TERMINA RESPONSIVE GENERALES----------------------------------------*/
+
+	/*-----------------------------------------------COMIENZA RESPONSIVE DEL NAVBAR----------------------------------------*/
+    .Logo{
+		width: 40px;
+		margin: auto 0;
+	}
+    nav{
+	display:block;
+    margin: auto 0;
+	}
+	header label{
+	display:block;
+	}
+	.Menu{ /*HEADER NAV UL*/
+        list-style: none;
+		position:absolute;
+		top:61;
+		left:0;
+		background: rgba(44, 55, 59, 0.75);
+		width:100%;
+		-webkit-transform: translateY(-120%);
+		    -ms-transform: translateY(-120%);
+		        transform: translateY(-120%);
+		-webkit-transition: all 0.3s;
+		-o-transition: all 0.3s;
+		transition: all 0.3s;
+    }
+
+	.Menu-items{
+	float:none;
+	}
+
+	#btn-menu:checked ~ .menu{
+	-webkit-transform: translateY(0%);
+	    -ms-transform: translateY(0%);
+	        transform: translateY(0%);
+
+	}
+
+	/*-----------------------------------------------TERMINA RESPONSIVE DEL NAVBAR----------------------------------------*/
+
+	/*-----------------------------------------------COMIENZA RESPONSIVE DE INDEX----------------------------------------*/
+    .Banner-txt-arriba{
+        font-size: 1.1em;
+		letter-spacing: .2em;
+    }
+
+    .Banner-Titulo{
+        font-size:1.7em;
+    }
+
+    .Banner-txt-abajo{
+        font-size:.5em;
+    }
+
+    .Btn-banner{
+        font-size: 14px;
+    }
+    .Premisa{   /* BEGIN WUILLADORS*/
+        font-size: 1em;
+        margin-bottom: 5%;
+    }
+    .Titulo-Premisa{
+        font-size: 1.7em;
+        margin: 0 0 5% 0;
+    }
+    .btn-premisa, .btn-premisa-2{
+        font-size: 14px;
+    }
+    .Contenedor-SS{
+        flex-direction: column;
+    }
+    .Lado-Iz-2{
+        width: 100%;
+        height: 40%;
+        background-size:contain;
+        order:2;
+        margin: 15%;
+    }
+    .Lado-Der-2{
+        width: 100%;
+        height: auto;
+        padding-top: 10%;
+        order:1;
+    }
+    .Promo-1 .Contenedor-SSW .Titulo-Premisa{
+        text-align: center;
+    }
+    .Lado-Iz{
+        padding: 0;
+    }
+    .Lado-Der-VE{
+        background-size: contain;
+    }
+    /* END WUILLADORS*/
+	/*-----------------------------------------------TERMINA RESPONSIVE DE INDEX----------------------------------------*/
+
+	/*-----------------------------------------------COMIENZA RESPONSIVE DE SEPARADOR-1----------------------------------------*/
+    .S-Banner-Conocenos .Contenedor .Forma{
+    	width: 100%;
+    }
+
+	.Sales{
+		display: none;
+	}
+
+	.Rocket, .Safe {
+    	margin: 0 5%;
+    }
+
+    .Rocket img, .Sales img, .Safe img{
+    	width: 20%;
+    }
+
+    .Rocket p, .Sales p, .Safe p{
+    	font-size: .1em;
+    }
+	/*-----------------------------------------------TERMINA RESPONSIVE DE SEPARADOR-1----------------------------------------*/
+
+	/*-----------------------------------------------COMIENZA RESPONSIVE DE NOSTROS-------------------------------------------*/
+    .Pagina-2{
+		height: auto;
+	}
+
+	.Pagina-2 .Contenedor{
+		height: auto;
+		max-height: none;
+	}
+
+    .Pagina-2 .Contenedor .Conocenos-descripcion {
+		margin: 3%;
+		font-size: .5em;
+    }
+
+	.Pagina-2 .Contenedor .Contenedor-detalles{
+		height: auto;
+	}
+
+    .Mision, .Vision, .Fortalezas {
+    	height: 50%;
+    	width: 70%;
+    	margin: 5% auto;
+    }
+
+    .Mision p, .Vision p, .Fortalezas p {
+     	font-size: .5em;
+    }
+	/*-----------------------------------------------TERMINA RESPONSIVE DE NOSTROS-------------------------------------------*/
+
+	/*-----------------------------------------------COMIENZA RESPONSIVE DE SEPARADOR-2-------------------------------------*/
+    .S-Conocenos-Productos .Contenedor {
+    	width: 100%;
+    }
+
+	.S-Conocenos-Productos .Contenedor .Forma-Amarilla{
+		width:70%;
+		background: url('../img/Separador-3.png') no-repeat;
+		background-size: cover;
+	}
+
+    .S-Conocenos-Productos .Contenedor .Forma-Amarilla p {
+    	font-size: .4em;
+    	width: 100%;
+		margin-right:20%;
+    }
+
+	.S-Conocenos-Productos .Contenedor .Contenedor-Logos-RedesSociales a img{
+		width:30%;
+	}
+
+	.S-Conocenos-Productos .Contenedor .Contenedor-Logos-RedesSociales {
+    	display:none;
+    }
+
+	/*-----------------------------------------------TERMINA RESPONSIVE DE SEPARADOR-2-------------------------------------*/
+
+	/*-----------------------------------------------COMIENZA RESPONSIVE DE PRODUCTOS-------------------------------------*/
+    .Pagina-3{
+		height: auto;
+	}
+
+	.Pagina-3 .Contenedor{
+		height:auto;
+		max-height: none;
+		margin: 5%;
+	}
+
+	.Filtro {
+		font-size: .64em;
+    }
+
+    .Contenedor-Titulo {
+		height: 20%;
+    }
+
+	.Contenedor-Titulo p{
+		font-size: .8em;
+	}
+
+	.Contenedor-Titulo h2{
+		margin: 0 3% 3% 3%;
+	}
+
+    .Contenedor-Todos-Productos {
+		height: auto;
+	}
+
+   .Tarjeta {
+		height: 32%;
+		width: 100%;
+	   	margin: 4%;
+    }
+
+	.Tarjeta-Derecha .Produto-Titulos .Tipo{
+		font-size: .8em;
+	}
+
+	.Tarjeta-Derecha .Produto-Titulos .Nombre{
+		font-size: 1em;
+	}
+
+	.Tarjeta-Derecha .Producto-Detalles{
+		font-size: .7em;
+	}
+
+	.Tarjeta-Derecha .Btn-Producto-Detalles a{
+		padding: 4px;
+		font-size: .9em;
+	}
+
+	.Contenedor-Modo-De-Uso{
+		height: auto;
+	}
+
+	/*-----------------------------------------------TERMINA RESPONSIVE DE PRODUCTOS-------------------------------------*/
+
+	/*-----------------------------------------------COMIENZA RESPONSIVE DE SEPARADOR-3-------------------------------------*/
+	.S-Productos-Calidad .Contenedor{
+		width:100%
+	}
+
+	.S-Productos-Calidad .Contenedor .Forma-Amarilla-2{
+		background:url('../img/Separador-4.png')no-repeat;
+		background-size: cover;
+	}
+
+	.Promocion-Textos{
+		display: none;
+	}
+
+	.btn-Contactanos{
+		font-size: .8em;
+		padding: 5px;
+	}
+
+	/*-----------------------------------------------TERMINA RESPONSIVE DE SEPARADOR-3-------------------------------------*/
+
+	/*-----------------------------------------------COMIENZA RESPONSIVE DE CALIDAD-------------------------------------*/
+
+	.Pagina-4{
+		height: auto;
+	}
+
+	.Titulos-Pagina{
+		height: 40%;
+	}
+
+	.Textos .Descripcion-Pagina{
+		height: 60%;
+	}
+
+	.Textos{
+		height:40%;
+	}
+
+	.Pagina-4 .Contenedor {
+		height: auto;
+		max-height: none;
+		margin: 5% auto;
+	}
+
+	.Titulos-Pagina p{
+		font-size: .8em;
+	}
+
+	.Titulos-Pagina h2{
+		margin: 0% 3% 3% 3%;
+	}
+
+	.Descripcion-Pagina p{
+		font-size: .5em;
+	}
+
+	.Todas-Pruebas{
+		height: auto;
+	}
+
+	.Tarjeta-Prueba{
+		margin: 10% auto;
+		width: 90%;
+		height: 70%;
+		-webkit-box-shadow: 0 9px 20px 0 rgba(28, 30, 35, 0.2);
+		        box-shadow: 0 9px 20px 0 rgba(28, 30, 35, 0.2);
+		border-color: transparent !important;
+		border-radius: 10px;
+	}
+
+	.Palabra-Prueba{
+		font-size: .7em;
+	}
+
+	.Tipo-Prueba{
+		font-size: .8em;
+	}
+
+	.Descripcion-Contenedor .Descripcio-Prueba{
+		font-size: .7em;
+	}
+
+	.Btn-leer-mas {
+		font-size: .8em;
+	}
+
+	/*-----------------------------------------------TERMINA RESPONSIVE DE CALIDAD-------------------------------------*/
+
+	/*-----------------------------------------------COMIENZA RESPONSIVE DE SEPARADOR-4-------------------------------------*/
+	.S-Calidad-Contactanos p{
+		font-size: 1em;
+	}
+	/*-----------------------------------------------TERMINA RESPONSIVE DE SEPARADOR-4-------------------------------------*/
+
+	/*-----------------------------------------------COMIENZA RESPONSIVE DE CONTACTO-4-------------------------------------*/
+
+	.Pagina-5{
+		height: auto;
+	}
+
+	.Pagina-5 .Contenedor{
+		height: auto;
+		max-height: none;
+	}
+
+	.Textos-Pag-5 p{
+		font-size: .8em;
+		text-align: center;
+	}
+
+	.Textos-Pag-5 h2{
+		margin: 0% 3% 3% 3%;
+		letter-spacing: 0;
+	}
+
+	.Contenedor-inputs{
+		width: 100%;
+		height: auto;
+	}
+
+	.Formulario-Consulta [type=text], .Formulario-Consulta [type=email],
+	.Formulario-Consulta [type=tel]{
+		height: 10%;
+		width: 100%;
+		margin: 1% auto;
+	}
+
+	.Formulario-Consulta textarea{
+		height: 50%;
+	}
+
+	.Formulario-Consulta button{
+		font-size: .8em;
+		padding: 5%;
+		margin: 5% auto;
+	}
+
+	.Contenedor-Info{
+		width: 100%;
+		height: auto;
+		margin: 5% auto;
+	}
+
+	/*-----------------------------------------------TERMINA RESPONSIVE DE CONTACTO--------------------------------------*/
+
+	/*-----------------------------------------------COMIENZA RESPONSIVE DE FOOTER--------------------------------------*/
+	.Footer{
+		height: 10%
+	}
+
+	.Footer .Contenedor .Logo-Letra{
+		width: auto
+	}
+
+	.Footer .Contenedor .Devs-thx{
+		display: none;
+	}
+
+    /*-----------------------------------------------TERMINA RESPONSIVE DE FOOTER--------------------------------------*/
+    .show {
+    	display:-webkit-box;
+    	display:-ms-flexbox;
+    	display:flex;
+    }
+
+}
+/*-----------------------------------------------TERMINA RESPONSIVE DE 480PX--------------------------------------*/
+/*-----------------------------------------------TERMINA RESPONSIVE DE 480PX--------------------------------------*/
+/*-----------------------------------------------TERMINA RESPONSIVE DE 480PX--------------------------------------*/
+/*-----------------------------------------------TERMINA RESPONSIVE DE 480PX--------------------------------------*/
+
+
+@media screen and (min-width: 481px) and (max-width: 599px){ /*TELEFONOS LANDSCAPE*/
+	/*-----------------------------------------------COMIENZA RESPONSIVE GENERALES----------------------------------------*/
+	h2 {
+		font-size: 2.5em;
+		margin:10% 3% 3% 3%;
+    }
+
+	h3{
+		font-size: 1.5em;
+	}
+	/*-----------------------------------------------TERMINA RESPONSIVE GENERALES----------------------------------------*/
+
+	/*-----------------------------------------------COMIENZA RESPONSIVE DEL NAVBAR----------------------------------------*/
+	.Logo{
+		width: 40px;
+		margin: auto 0;
+	}
+	nav{
+	display:block;
+	margin: auto 0;
+	}
+	header label{
+	display:block;
+	}
+	.Menu{ /*HEADER NAV UL*/
+        list-style: none;
+		position:absolute;
+		top:61;
+		left:0;
+		background: rgba(44, 55, 59, 0.75);
+		width:100%;
+		-webkit-transform: translateY(-120%);
+		    -ms-transform: translateY(-120%);
+		        transform: translateY(-120%);
+		-webkit-transition: all 0.3s;
+		-o-transition: all 0.3s;
+		transition: all 0.3s;
+    }
+
+	.Menu-items{
+	float:none;
+	}
+
+	#btn-menu:checked ~ .menu{
+	-webkit-transform: translateY(0%);
+	    -ms-transform: translateY(0%);
+	        transform: translateY(0%);
+
+	}
+
+	/*-----------------------------------------------TERMINA RESPONSIVE DEL NAVBAR----------------------------------------*/
+
+	/*-----------------------------------------------COMIENZA RESPONSIVE DE INDEX----------------------------------------*/
+    .Banner-txt-arriba{
+        font-size: 1.1em;
+		letter-spacing: .2em;
+    }
+
+    .Banner-Titulo{
+        font-size:1.7em;
+    }
+
+    .Banner-txt-abajo{
+        font-size:.5em;
+    }
+
+	.Contenedor-btn{
+		top: 75%;
+	}
+
+    .Btn-banner{
+        font-size: 10px;
+		padding: 10px;
+    }
+    .Premisa{   /* BEGIN WUILLADORS*/
+        font-size: 1em;
+        margin-bottom: 2%;
+    }
+    .Titulo-Premisa{
+        font-size: 2em;
+        margin: 0 0 5% 0;
+    }
+    .btn-premisa, .btn-premisa-3, .btn-premisa-2{
+        font-size: 14px;
+    }
+    .Lado-Iz-2{
+        background-size: contain;
+    }
+
+    .Promo-1 .Contenedor-SSW .Titulo-Premisa{
+        text-align: center;
+    }
+    .Lado-Der-VE{
+        width: 25%;
+        margin-left: 10%;
+        margin-top: 5%;
+        background-size: contain;
+    }
+    /* END WUILLADORS*/
+	/*-----------------------------------------------TERMINA RESPONSIVE DE INDEX----------------------------------------*/
+
+	/*-----------------------------------------------COMIENZA RESPONSIVE DE SEPARADOR-1----------------------------------------*/
+    .S-Banner-Conocenos{
+		height: 20%;
+	}
+
+	.S-Banner-Conocenos .Contenedor .Forma{
+    	width: 100%;
+    }
+
+	.Rocket, .Safe, .Sales {
+    	margin: 0px 1% 0px 0px;
+    }
+
+    .Rocket img, .Sales img, .Safe img{
+    	width: 20%;
+    }
+
+    .Rocket p, .Sales p, .Safe p{
+    	font-size: .5em;
+    }
+	/*-----------------------------------------------TERMINA RESPONSIVE DE SEPARADOR-1----------------------------------------*/
+
+	/*-----------------------------------------------COMIENZA RESPONSIVE DE NOSTROS-------------------------------------------*/
+    .Pagina-2{
+		height: auto;
+	}
+
+	.Pagina-2 .Contenedor{
+		height: auto;
+		max-height: none;
+	}
+
+    .Pagina-2 .Contenedor .Conocenos-descripcion {
+		font-size: .7em;
+		margin: 3%;
+    }
+
+	.Pagina-2 .Contenedor .Contenedor-detalles{
+		height: auto;
+	}
+
+    .Mision, .Vision, .Fortalezas {
+    	height: 90%;
+    	width: 55%;
+    	margin: 5% auto;
+    }
+
+    .Mision p, .Vision p, .Fortalezas p {
+     	font-size: .7em;
+    }
+	/*-----------------------------------------------TERMINA RESPONSIVE DE NOSTROS-------------------------------------------*/
+
+	/*-----------------------------------------------COMIENZA RESPONSIVE DE SEPARADOR-2-------------------------------------*/
+    .S-Conocenos-Productos{
+		height: 20%;
+	}
+
+	.S-Conocenos-Productos .Contenedor {
+    	width: 100%;
+    }
+
+	.S-Conocenos-Productos .Contenedor .Forma-Amarilla{
+		width:70%;
+		background: url('../img/Separador-3.png') no-repeat;
+		background-size: cover;
+	}
+
+    .S-Conocenos-Productos .Contenedor .Forma-Amarilla p {
+    	font-size: .5em;
+    	width: 100%;
+		margin-right: 18%;
+    }
+
+	.S-Conocenos-Productos .Contenedor .Contenedor-Logos-RedesSociales a img{
+		width: 50%;
+	}
+
+	.S-Conocenos-Productos .Contenedor .Contenedor-Logos-RedesSociales {
+    	width: 30%;
+    }
+
+	/*-----------------------------------------------TERMINA RESPONSIVE DE SEPARADOR-2-------------------------------------*/
+
+	/*-----------------------------------------------COMIENZA RESPONSIVE DE PRODUCTOS-------------------------------------*/
+    .Pagina-3{
+		height: auto;
+	}
+
+	.Pagina-3 .Contenedor{
+		height:auto;
+		max-height: none;
+		margin: 5%;
+	}
+
+	.Contenedor-Filtros{
+		height: 15%;
+	}
+
+	.Filtro {
+		font-size: .64em;
+    }
+
+    .Contenedor-Titulo {
+		height: 30%;
+    }
+
+	.Contenedor-Titulo p{
+		font-size: .7em;
+	}
+
+	.Contenedor-Titulo h2{
+		margin: 0 3% 3% 3%;
+	}
+
+    .Contenedor-Todos-Productos {
+		height: auto;
+	}
+
+   .Tarjeta {
+		height: 70%;
+	   	max-width: none;
+		width: 90%;
+	   	margin: 5%;
+    }
+
+	.Tarjeta-Derecha .Produto-Titulos .Tipo{
+		font-size: 1em;
+	}
+
+	.Tarjeta-Derecha .Produto-Titulos .Nombre{
+		font-size: 1.5em;
+	}
+
+	.Tarjeta-Derecha .Producto-Detalles{
+		font-size: 1em;
+	}
+
+	.Tarjeta-Derecha .Btn-Producto-Detalles a{
+		padding: 10px;
+		font-size: 1em;
+	}
+
+	.Contenedor-Modo-De-Uso{
+		height: auto;
+	}
+
+	/*-----------------------------------------------TERMINA RESPONSIVE DE PRODUCTOS-------------------------------------*/
+
+	/*-----------------------------------------------COMIENZA RESPONSIVE DE SEPARADOR-3-------------------------------------*/
+
+	.S-Productos-Calidad{
+		height: 20%;
+	}
+
+	.S-Productos-Calidad .Contenedor{
+		width:100%
+	}
+
+	.S-Productos-Calidad .Contenedor .Forma-Amarilla-2{
+		background:url('../img/Separador-4.png')no-repeat;
+		background-size: cover;
+	}
+
+	.Promocion-Textos{
+		display: none;
+	}
+
+	.btn-Contactanos{
+		font-size: 1em;
+		padding: 10px;
+	}
+
+	/*-----------------------------------------------TERMINA RESPONSIVE DE SEPARADOR-3-------------------------------------*/
+
+	/*-----------------------------------------------COMIENZA RESPONSIVE DE CALIDAD-------------------------------------*/
+
+	.Pagina-4{
+		height: auto;
+	}
+
+	.Titulos-Pagina{
+		height: 40%;
+	}
+
+	.Textos .Descripcion-Pagina{
+		height: 60%;
+	}
+
+	.Textos{
+		height:auto;
+	}
+
+	.Pagina-4 .Contenedor {
+		height: auto;
+		max-height: none;
+		margin: 5% auto;
+	}
+
+	.Titulos-Pagina p{
+		font-size: .7em;
+	}
+
+	.Titulos-Pagina h2{
+		margin: 0% 3% 3% 3%;
+	}
+
+	.Descripcion-Pagina p{
+		font-size: .7em;
+	}
+
+	.Todas-Pruebas{
+		height: auto;
+	}
+
+	.Tarjeta-Prueba{
+		margin: 10% auto;
+		width: 80%;
+		height: 100%;
+		-webkit-box-shadow: 0 9px 20px 0 rgba(28, 30, 35, 0.2);
+		        box-shadow: 0 9px 20px 0 rgba(28, 30, 35, 0.2);
+		border-color: transparent !important;
+		border-radius: 10px;
+	}
+
+	.Palabra-Prueba{
+		font-size: .7em;
+	}
+
+	.Tipo-Prueba{
+		font-size: .8em;
+	}
+
+	.Descripcion-Contenedor .Descripcio-Prueba{
+		font-size: .7em;
+	}
+
+	.Btn-leer-mas {
+		font-size: .8em;
+	}
+
+	/*-----------------------------------------------TERMINA RESPONSIVE DE CALIDAD-------------------------------------*/
+
+	/*-----------------------------------------------COMIENZA RESPONSIVE DE SEPARADOR-4-------------------------------------*/
+	.S-Calidad-Contactanos{
+		height: 20%;
+	}
+
+	.S-Calidad-Contactanos p{
+		font-size: 1em;
+	}
+	/*-----------------------------------------------TERMINA RESPONSIVE DE SEPARADOR-4-------------------------------------*/
+
+	/*-----------------------------------------------COMIENZA RESPONSIVE DE CONTACTO-4-------------------------------------*/
+
+	.Pagina-5{
+		height: auto;
+	}
+
+	.Pagina-5 .Contenedor{
+		height: auto;
+		max-height: none;
+	}
+
+	.Textos-Pag-5 p{
+		font-size: .8em;
+		text-align: center;
+	}
+
+	.Textos-Pag-5 h2{
+		margin: 0% 3% 3% 3%;
+		letter-spacing: 0;
+	}
+
+	.Contenedor-inputs{
+		width: 100%;
+		height: auto;
+	}
+
+	.Formulario-Consulta [type=text], .Formulario-Consulta [type=email],
+	.Formulario-Consulta [type=tel]{
+		height: 10%;
+		width: 100%;
+		margin: 1% auto;
+	}
+
+	.Formulario-Consulta textarea{
+		height: 50%;
+	}
+
+	.Formulario-Consulta button{
+		font-size: .8em;
+		padding: 5%;
+		margin: 5% auto;
+	}
+
+	.Contenedor-Info{
+		width: 100%;
+		height: auto;
+		margin: 5% auto;
+	}
+
+	/*-----------------------------------------------TERMINA RESPONSIVE DE CONTACTO--------------------------------------*/
+
+	/*-----------------------------------------------COMIENZA RESPONSIVE DE FOOTER--------------------------------------*/
+	.Footer{
+		height: 15%
+	}
+
+	.Footer .Contenedor .Logo-Letra{
+		width: auto
+	}
+
+	/*-----------------------------------------------TERMINA RESPONSIVE DE FOOTER--------------------------------------*/
+    .show {
+  		display:-webkit-box;
+  		display:-ms-flexbox;
+  		display:flex;
+    }
+
+}
+	/*-----------------------------------------------TERMINA RESPONSIVE DE 599px--------------------------------------*/
+	/*-----------------------------------------------TERMINA RESPONSIVE DE 599px--------------------------------------*/
+	/*-----------------------------------------------TERMINA RESPONSIVE DE 599px--------------------------------------*/
+	/*-----------------------------------------------TERMINA RESPONSIVE DE 599px--------------------------------------*/
+
+
+@media screen and (min-width: 600px) and (max-width: 799px){ /*TABLETS VERTICALES*/
+	/*-----------------------------------------------COMIENZA RESPONSIVE GENERALES----------------------------------------*/
+	h2 {
+		font-size: 2.5em;
+		margin:10% 3% 3% 3%;
+    }
+
+	h3{
+		font-size: 1.5em;
+	}
+	/*-----------------------------------------------TERMINA RESPONSIVE GENERALES----------------------------------------*/
+
+	/*-----------------------------------------------COMIENZA RESPONSIVE DEL NAVBAR----------------------------------------*/
+	nav{
+	display:block;
+	margin: auto 0;
+	}
+	header label{
+	display:block;
+	}
+	.Menu{ /*HEADER NAV UL*/
+        list-style: none;
+		position:absolute;
+		top:61;
+		left:0;
+		background: rgba(44, 55, 59, 0.75);
+		width:100%;
+		-webkit-transform: translateY(-120%);
+		    -ms-transform: translateY(-120%);
+		        transform: translateY(-120%);
+		-webkit-transition: all 0.3s;
+		-o-transition: all 0.3s;
+		transition: all 0.3s;
+    }
+
+	.Menu-items{
+	float:none;
+	}
+
+	#btn-menu:checked ~ .menu{
+	-webkit-transform: translateY(0%);
+	    -ms-transform: translateY(0%);
+	        transform: translateY(0%);
+
+	}
+
+	/*-----------------------------------------------TERMINA RESPONSIVE DEL NAVBAR----------------------------------------*/
+
+	/*-----------------------------------------------COMIENZA RESPONSIVE DE INDEX----------------------------------------*/
+    .Banner-txt-arriba{
+        font-size: 1.1em;
+		letter-spacing: .2em;
+    }
+
+    .Banner-Titulo{
+        font-size: 2.5em;
+    }
+
+    .Banner-txt-abajo{
+        font-size: .8em;
+    }
+
+	.Contenedor-btn{
+		top: 75%;
+	}
+
+    .Btn-banner{
+        font-size: 1em;
+    }
+    .Premisa{   /* BEGIN WUILLADORS*/
+        font-size: 1em;
+        margin-bottom: 2%;
+    }
+    .Titulo-Premisa{
+        font-size: 2em;
+        margin: 0 0 5% 0;
+    }
+    .btn-premisa, .btn-premisa-3, .btn-premisa-2{
+        font-size: 14px;
+    }
+    .Lado-Iz-2{
+        background-size: contain;
+    }
+
+    .Promo-1 .Contenedor-SSW .Titulo-Premisa{
+        text-align: center;
+    }/* END WUILLADORS*/
+	/*-----------------------------------------------TERMINA RESPONSIVE DE INDEX----------------------------------------*/
+
+	/*-----------------------------------------------COMIENZA RESPONSIVE DE SEPARADOR-1----------------------------------------*/
+    .S-Banner-Conocenos{
+		height: 8%;
+	}
+
+	.S-Banner-Conocenos .Contenedor .Forma{
+    	width: 100%;
+    }
+
+	.Rocket, .Safe, .Sales {
+    	margin: 0px 1% 0px 0px;
+    }
+
+    .Rocket img, .Sales img, .Safe img{
+    	width: 20%;
+    }
+
+    .Rocket p, .Sales p, .Safe p{
+    	font-size: .5em;
+    }
+	/*-----------------------------------------------TERMINA RESPONSIVE DE SEPARADOR-1----------------------------------------*/
+
+	/*-----------------------------------------------COMIENZA RESPONSIVE DE NOSTROS-------------------------------------------*/
+    .Pagina-2{
+		height: auto;
+	}
+
+	.Pagina-2 .Contenedor{
+		height: auto;
+		max-height: none;
+	}
+
+    .Pagina-2 .Contenedor .Conocenos-descripcion {
+		margin: 3%;
+		font-size: .7em;
+    }
+
+	.Pagina-2 .Contenedor .Contenedor-detalles{
+		height: auto;
+	}
+
+    .Mision, .Vision, .Fortalezas {
+    	height: 45%;
+    	width: 65%;
+    	margin: 5% auto;
+    }
+
+    .Mision p, .Vision p, .Fortalezas p {
+     	font-size: .7em;
+    }
+	/*-----------------------------------------------TERMINA RESPONSIVE DE NOSTROS-------------------------------------------*/
+
+	/*-----------------------------------------------COMIENZA RESPONSIVE DE SEPARADOR-2-------------------------------------*/
+    .S-Conocenos-Productos{
+		height: 10%;
+	}
+
+	.S-Conocenos-Productos .Contenedor {
+    	width: 100%;
+    }
+
+	.S-Conocenos-Productos .Contenedor .Forma-Amarilla{
+		width:70%;
+		background: url('../img/Separador-3.png') no-repeat;
+		background-size: cover;
+	}
+
+    .S-Conocenos-Productos .Contenedor .Forma-Amarilla p {
+    	font-size: .5em;
+    	width: 100%;
+		margin-right: 18%;
+    }
+
+	.S-Conocenos-Productos .Contenedor .Contenedor-Logos-RedesSociales a img{
+		width: 50%;
+	}
+
+	.S-Conocenos-Productos .Contenedor .Contenedor-Logos-RedesSociales {
+    	width: 30%;
+    }
+
+	/*-----------------------------------------------TERMINA RESPONSIVE DE SEPARADOR-2-------------------------------------*/
+
+	/*-----------------------------------------------COMIENZA RESPONSIVE DE PRODUCTOS-------------------------------------*/
+    .Pagina-3{
+		height: auto;
+	}
+
+	.Pagina-3 .Contenedor{
+		height:auto;
+		max-height: none;
+		margin: 5%;
+	}
+
+	.Contenedor-Filtros{
+		height: auto;
+	}
+
+	.Filtro {
+		font-size: .64em;
+    }
+
+    .Contenedor-Titulo {
+		height: 30%;
+    }
+
+	.Contenedor-Titulo p{
+		font-size: .7em;
+	}
+
+	.Contenedor-Titulo h2{
+		margin: 0 3% 3% 3%;
+	}
+
+    .Contenedor-Todos-Productos {
+		height: auto;
+	}
+
+   .Tarjeta {
+		height: 25%;
+	   	max-width: none;
+	   	max-height: none;
+		width: 90%;
+	   	margin: 5%;
+    }
+
+	.Tarjeta-Derecha .Produto-Titulos .Tipo{
+		font-size: .8em;
+	}
+
+	.Tarjeta-Derecha .Produto-Titulos .Nombre{
+		font-size: 1.1em;
+	}
+
+	.Tarjeta-Derecha .Producto-Detalles{
+		font-size: .8em;
+	}
+
+	.Tarjeta-Derecha .Btn-Producto-Detalles a{
+		padding: 10px;
+		font-size: .8em;
+	}
+
+	.Contenedor-Modo-De-Uso{
+		height: auto;
+	}
+
+	/*-----------------------------------------------TERMINA RESPONSIVE DE PRODUCTOS-------------------------------------*/
+
+	/*-----------------------------------------------COMIENZA RESPONSIVE DE SEPARADOR-3-------------------------------------*/
+
+	.S-Productos-Calidad{
+		height: 10%;
+	}
+
+	.S-Productos-Calidad .Contenedor{
+		width:100%
+	}
+
+	.S-Productos-Calidad .Contenedor .Forma-Amarilla-2{
+		background:url('../img/Separador-4.png')no-repeat;
+		background-size: cover;
+	}
+
+	.Promocion-Textos{
+		display: none;
+	}
+
+	.btn-Contactanos{
+		font-size: 1em;
+		padding: 10px;
+	}
+
+	/*-----------------------------------------------TERMINA RESPONSIVE DE SEPARADOR-3-------------------------------------*/
+
+	/*-----------------------------------------------COMIENZA RESPONSIVE DE CALIDAD-------------------------------------*/
+
+	.Pagina-4{
+		height: auto;
+	}
+
+	.Titulos-Pagina{
+		height: auto;
+		margin: 5% auto;
+	}
+
+	.Textos .Descripcion-Pagina{
+		height: auto;
+		margin: 5% auto;
+	}
+
+	.Textos{
+		height:auto;
+	}
+
+	.Pagina-4 .Contenedor {
+		height: auto;
+		max-height: none;
+		margin: 5% auto;
+	}
+
+	.Titulos-Pagina p{
+		font-size: .7em;
+	}
+
+	.Titulos-Pagina h2{
+		margin: 0% 3% 3% 3%;
+	}
+
+	.Descripcion-Pagina p{
+		font-size: .7em;
+	}
+
+	.Todas-Pruebas{
+		height: auto;
+	}
+
+	.Tarjeta-Prueba{
+		margin: 10% auto;
+		width: 80%;
+		height: 50%;
+		-webkit-box-shadow: 0 9px 20px 0 rgba(28, 30, 35, 0.2);
+		        box-shadow: 0 9px 20px 0 rgba(28, 30, 35, 0.2);
+		border-color: transparent !important;
+		border-radius: 10px;
+	}
+
+	.Palabra-Prueba{
+		font-size: .7em;
+	}
+
+	.Tipo-Prueba{
+		font-size: .8em;
+	}
+
+	.Descripcion-Contenedor .Descripcio-Prueba{
+		font-size: .7em;
+	}
+
+	.Btn-leer-mas {
+		font-size: .8em;
+	}
+
+	/*-----------------------------------------------TERMINA RESPONSIVE DE CALIDAD-------------------------------------*/
+
+	/*-----------------------------------------------COMIENZA RESPONSIVE DE SEPARADOR-4-------------------------------------*/
+	.S-Calidad-Contactanos{
+		height: 10%;
+	}
+
+	.S-Calidad-Contactanos p{
+		font-size: 1em;
+	}
+	/*-----------------------------------------------TERMINA RESPONSIVE DE SEPARADOR-4-------------------------------------*/
+
+	/*-----------------------------------------------COMIENZA RESPONSIVE DE CONTACTO-4-------------------------------------*/
+
+	.Pagina-5{
+		height: auto;
+	}
+
+	.Pagina-5 .Contenedor{
+		height: auto;
+		max-height: none;
+	}
+
+	.Textos-Pag-5 p{
+		font-size: .8em;
+		text-align: center;
+	}
+
+	.Textos-Pag-5 h2{
+		margin: 0% 3% 3% 3%;
+		letter-spacing: 0;
+	}
+
+	.Contenedor-inputs{
+		width: 100%;
+		height: auto;
+	}
+
+	.Formulario-Consulta [type=text], .Formulario-Consulta [type=email],
+	.Formulario-Consulta [type=tel]{
+		height: 10%;
+		width: 100%;
+		margin: 1% auto;
+	}
+
+	.Formulario-Consulta textarea{
+		height: 50%;
+	}
+
+	.Formulario-Consulta button{
+		font-size: .8em;
+		padding: 5%;
+		margin: 5% auto;
+	}
+
+	.Contenedor-Info{
+		width: 100%;
+		height: auto;
+		margin: 5% auto;
+	}
+
+	/*-----------------------------------------------TERMINA RESPONSIVE DE CONTACTO--------------------------------------*/
+
+	/*-----------------------------------------------COMIENZA RESPONSIVE DE FOOTER--------------------------------------*/
+	.Footer{
+		height: 10%
+	}
+
+	.Footer .Contenedor .Logo-Letra{
+		width: auto
+	}
+
+	/*-----------------------------------------------TERMINA RESPONSIVE DE FOOTER--------------------------------------*/
+    .show {
+  		display:-webkit-box;
+  		display:-ms-flexbox;
+  		display:flex;
+    }
+
+}
+
+	/*-----------------------------------------------TERMINA RESPONSIVE DE 799px--------------------------------------*/
+	/*-----------------------------------------------TERMINA RESPONSIVE DE 799px--------------------------------------*/
+	/*-----------------------------------------------TERMINA RESPONSIVE DE 799px--------------------------------------*/
+	/*-----------------------------------------------TERMINA RESPONSIVE DE 799px--------------------------------------*/
+
+@media screen and (min-width: 800px) and (max-width: 1024px){ /*TABLETS LANSCAPE*/
+	/*-----------------------------------------------COMIENZA RESPONSIVE GENERALES----------------------------------------*/
+	h2 {
+		font-size: 2.5em;
+		margin:10% 3% 3% 3%;
+    }
+
+	h3{
+		font-size: .9em;
+	}
+	/*-----------------------------------------------TERMINA RESPONSIVE GENERALES----------------------------------------*/
+
+	/*-----------------------------------------------COMIENZA RESPONSIVE DEL NAVBAR----------------------------------------*/
+	nav{
+	display:block;
+	margin: auto 0;
+	}
+	header label{
+	display:block;
+	}
+	.Menu{ /*HEADER NAV UL*/
+        list-style: none;
+		position:absolute;
+		top:61;
+		left:0;
+		background: rgba(44, 55, 59, 0.75);
+		width:100%;
+		-webkit-transform: translateY(-120%);
+		    -ms-transform: translateY(-120%);
+		        transform: translateY(-120%);
+		-webkit-transition: all 0.3s;
+		-o-transition: all 0.3s;
+		transition: all 0.3s;
+    }
+
+	.Menu-items{
+	float:none;
+	}
+
+	#btn-menu:checked ~ .menu{
+	-webkit-transform: translateY(0%);
+	    -ms-transform: translateY(0%);
+	        transform: translateY(0%);
+
+	}
+
+	/*-----------------------------------------------TERMINA RESPONSIVE DEL NAVBAR----------------------------------------*/
+
+	/*-----------------------------------------------COMIENZA RESPONSIVE DE INDEX----------------------------------------*/
+    .Banner-txt-arriba{
+        font-size: 1.1em;
+		letter-spacing: .2em;
+    }
+
+    .Banner-Titulo{
+        font-size: 3.5em;
+    }
+
+    .Banner-txt-abajo{
+        font-size: .8em;
+    }
+
+	.Contenedor-btn{
+		top: 85%;
+	}
+
+    .Btn-banner{
+        font-size: .8em;
+		padding: 10px;
+    }
+    .Premisa{   /* BEGIN WUILLADORS*/
+        font-size: 1em;
+        margin-bottom: 2%;
+    }
+    .Titulo-Premisa{
+        font-size: 2em;
+        margin: 0 0 5% 0;
+    }
+    .btn-premisa, .btn-premisa-3, .btn-premisa-2{
+        font-size: 14px;
+    }
+    .Lado-Iz-2{
+        background-size: contain;
+    }
+
+    .Promo-1 .Contenedor-SSW .Titulo-Premisa{
+        text-align: center;
+    }/* END WUILLADORS*/
+	/*-----------------------------------------------TERMINA RESPONSIVE DE INDEX----------------------------------------*/
+
+	/*-----------------------------------------------COMIENZA RESPONSIVE DE SEPARADOR-1----------------------------------------*/
+    .S-Banner-Conocenos{
+		height: 20%;
+	}
+
+	.S-Banner-Conocenos .Contenedor .Forma{
+    	width: 100%;
+    }
+
+	.Rocket, .Safe, .Sales {
+    	margin: 0px 1% 0px 0px;
+    }
+
+    .Rocket img, .Sales img, .Safe img{
+    	width: 20%;
+    }
+
+    .Rocket p, .Sales p, .Safe p{
+    	font-size: .7em;
+    }
+	/*-----------------------------------------------TERMINA RESPONSIVE DE SEPARADOR-1----------------------------------------*/
+
+	/*-----------------------------------------------COMIENZA RESPONSIVE DE NOSTROS-------------------------------------------*/
+    .Pagina-2{
+		height: auto;
+	}
+
+	.Pagina-2 .Contenedor{
+		height: auto;
+		max-height: none;
+	}
+
+    .Pagina-2 .Contenedor .Conocenos-descripcion {
+		margin: 3%;
+		font-size: .7em;
+    }
+
+	.Pagina-2 .Contenedor .Contenedor-detalles{
+		height: auto;
+	}
+
+    .Mision, .Vision, .Fortalezas {
+    	height: 70%;
+    	width: 30%;
+    	margin: 5% auto;
+    }
+
+    .Mision p, .Vision p, .Fortalezas p {
+     	font-size: .7em;
+    }
+	/*-----------------------------------------------TERMINA RESPONSIVE DE NOSTROS-------------------------------------------*/
+
+	/*-----------------------------------------------COMIENZA RESPONSIVE DE SEPARADOR-2-------------------------------------*/
+    .S-Conocenos-Productos{
+		height: 20%;
+	}
+
+	.S-Conocenos-Productos .Contenedor {
+    	width: 100%;
+    }
+
+	.S-Conocenos-Productos .Contenedor .Forma-Amarilla{
+		width:70%;
+		background: url('../img/Separador-3.png') no-repeat;
+		background-size: cover;
+	}
+
+    .S-Conocenos-Productos .Contenedor .Forma-Amarilla p {
+    	font-size: .7em;
+    	width: 100%;
+		margin-right: 12%;
+    }
+
+	.S-Conocenos-Productos .Contenedor .Contenedor-Logos-RedesSociales a img{
+		width: 50%;
+	}
+
+	.S-Conocenos-Productos .Contenedor .Contenedor-Logos-RedesSociales {
+    	width: 30%;
+    }
+
+	/*-----------------------------------------------TERMINA RESPONSIVE DE SEPARADOR-2-------------------------------------*/
+
+	/*-----------------------------------------------COMIENZA RESPONSIVE DE PRODUCTOS-------------------------------------*/
+    .Pagina-3{
+		height: auto;
+	}
+
+	.Pagina-3 .Contenedor{
+		height:auto;
+		max-height: none;
+		margin: 5%;
+	}
+
+	.Contenedor-Filtros{
+		height: auto;
+	}
+
+	.Filtro {
+		font-size: .64em;
+    }
+
+    .Contenedor-Titulo {
+		height: 30%;
+    }
+
+	.Contenedor-Titulo p{
+		font-size: .7em;
+	}
+
+	.Contenedor-Titulo h2{
+		margin: 0 3% 3% 3%;
+	}
+
+    .Contenedor-Todos-Productos {
+		height: auto;
+	}
+
+   .Tarjeta {
+	   	max-width: none;
+	   	max-height: none;
+		height: 40%;
+		width: 45%;
+	   	margin: 2%;
+    }
+
+	.Tarjeta-Derecha .Produto-Titulos .Tipo{
+		font-size: .6em;
+	}
+
+	.Tarjeta-Derecha .Produto-Titulos .Nombre{
+		font-size: 1em;
+	}
+
+	.Tarjeta-Derecha .Producto-Detalles{
+		font-size: .6em;
+	}
+
+	.Tarjeta-Derecha .Btn-Producto-Detalles a{
+		padding: 5px;
+		font-size: .6em;
+	}
+
+	.Contenedor-Modo-De-Uso{
+		height: auto;
+	}
+
+	/*-----------------------------------------------TERMINA RESPONSIVE DE PRODUCTOS-------------------------------------*/
+
+	/*-----------------------------------------------COMIENZA RESPONSIVE DE SEPARADOR-3-------------------------------------*/
+
+	.S-Productos-Calidad{
+		height: 20%;
+	}
+
+	.S-Productos-Calidad .Contenedor{
+		width:100%
+	}
+
+	.S-Productos-Calidad .Contenedor .Forma-Amarilla-2{
+		background:url('../img/Separador-4.png')no-repeat;
+		background-size: cover;
+	}
+
+	.Promocion-Textos{
+		font-size: .6em;
+	}
+
+	.btn-Contactanos{
+		font-size: .6em;
+		padding: 10px;
+	}
+
+	/*-----------------------------------------------TERMINA RESPONSIVE DE SEPARADOR-3-------------------------------------*/
+
+	/*-----------------------------------------------COMIENZA RESPONSIVE DE CALIDAD-------------------------------------*/
+
+	.Pagina-4{
+		height: auto;
+	}
+
+	.Titulos-Pagina{
+		height: auto;
+		margin: 5% auto;
+	}
+
+	.Textos .Descripcion-Pagina{
+		height: auto;
+		margin: 5% auto;
+	}
+
+	.Textos{
+		height:auto;
+	}
+
+	.Pagina-4 .Contenedor {
+		height: auto;
+		max-height: none;
+		margin: 5% auto;
+	}
+
+	.Titulos-Pagina p{
+		font-size: .7em;
+	}
+
+	.Titulos-Pagina h2{
+		margin: 0% 3% 3% 3%;
+	}
+
+	.Descripcion-Pagina p{
+		font-size: .7em;
+	}
+
+	.Todas-Pruebas{
+		height: auto;
+	}
+
+	.Tarjeta-Prueba{
+		margin: 5% auto;
+		width: 30%;
+		height: 75%;
+		-webkit-box-shadow: 0 9px 20px 0 rgba(28, 30, 35, 0.2);
+		        box-shadow: 0 9px 20px 0 rgba(28, 30, 35, 0.2);
+		border-color: transparent !important;
+		border-radius: 10px;
+	}
+
+	.Palabra-Prueba{
+		font-size: .5em;
+	}
+
+	.Tipo-Prueba{
+		font-size: .6em;
+	}
+
+	.Descripcion-Contenedor .Descripcio-Prueba{
+		font-size: .5em;
+	}
+
+	.Btn-leer-mas {
+		font-size: .5em;
+	}
+
+	/*-----------------------------------------------TERMINA RESPONSIVE DE CALIDAD-------------------------------------*/
+
+	/*-----------------------------------------------COMIENZA RESPONSIVE DE SEPARADOR-4-------------------------------------*/
+	.S-Calidad-Contactanos{
+		height: 20%;
+	}
+
+	.S-Calidad-Contactanos p{
+		font-size: 1em;
+	}
+	/*-----------------------------------------------TERMINA RESPONSIVE DE SEPARADOR-4-------------------------------------*/
+
+	/*-----------------------------------------------COMIENZA RESPONSIVE DE CONTACTO-4-------------------------------------*/
+
+	.Pagina-5{
+		height: auto;
+	}
+
+	.Pagina-5 .Contenedor{
+		height: auto;
+		max-height: none;
+		margin: 5% auto;
+	}
+
+	.Textos-Pag-5 p{
+		font-size: .8em;
+		text-align: center;
+	}
+
+	.Textos-Pag-5 h2{
+		margin: 0% 3% 3% 3%;
+		letter-spacing: 0;
+	}
+
+	.Contenedor-inputs{
+		width: 100%;
+		height: auto;
+	}
+
+	.Formulario-Consulta [type=text], .Formulario-Consulta [type=email],
+	.Formulario-Consulta [type=tel]{
+		height: 10%;
+		width: 100%;
+		margin: 1% auto;
+	}
+
+	.Formulario-Consulta textarea{
+		height: 50%;
+	}
+
+	.Formulario-Consulta button{
+		font-size: .8em;
+		padding: 5%;
+		margin: 5% auto;
+	}
+
+	.Contenedor-Info{
+		width: 100%;
+		height: auto;
+		margin: 5% auto;
+	}
+
+	/*-----------------------------------------------TERMINA RESPONSIVE DE CONTACTO--------------------------------------*/
+
+	/*-----------------------------------------------COMIENZA RESPONSIVE DE FOOTER--------------------------------------*/
+	.Footer{
+		height: 10%
+	}
+
+	.Footer .Contenedor .Logo-Letra{
+		width: auto
+	}
+
+	/*-----------------------------------------------TERMINA RESPONSIVE DE FOOTER--------------------------------------*/
+    .show {
+  		display:-webkit-box;
+  		display:-ms-flexbox;
+  		display:flex;
+    }
+
+}
+
+	/*-----------------------------------------------TERMINA RESPONSIVE DE 1024px--------------------------------------*/
+	/*-----------------------------------------------TERMINA RESPONSIVE DE 1024px--------------------------------------*/
+	/*-----------------------------------------------TERMINA RESPONSIVE DE 1024px--------------------------------------*/
+	/*-----------------------------------------------TERMINA RESPONSIVE DE 1024px--------------------------------------*/
+
+@media screen and (min-width: 1025px) and (max-width: 1366px){ /*LAPTOPS Y PCS LOW RESOLUTION*/
+	/*Correcion titulo productos en tarjeta*/
+	.Tarjeta{
+		height: 28%;
+	}
+
+	.Tarjeta-Derecha .Produto-Titulos .Nombre{
+		font-size: 1.25em;
+	}
+
+	/*Correciones a la medidas de la tarjeta de pruebas*/
+
+	.Tarjeta-Prueba{
+		height: 92%;
+		width: 25%;
+	}
+}
